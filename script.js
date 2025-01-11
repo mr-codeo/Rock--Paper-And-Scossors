@@ -57,6 +57,6 @@ function startGame(e){
     }
 
     score.innerHTML = `<span class="sides">User: ${userscore}</span>
-    <span class="sides">Computer: ${computerscore}</span>`
+    <span class="sides">Computer: ${computerscore}</span>`;
 }
 
