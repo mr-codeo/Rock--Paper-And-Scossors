@@ -53,7 +53,7 @@ function startGame(e){
         whowins.classList.add("lose");
     } else {
         whowins.innerHTML = winner ;
-    whowins.classList.add("tie");
+        whowins.classList.add("tie");
     }
 
     score.innerHTML = `<span class="sides">User: ${userscore}</span>
