@@ -10,27 +10,33 @@ function compare(choice1, choice2) {
     }
     else if (choice1 === "rock") {
         if (choice2 === "scissors"){
-            userscore++; return "User";
+            userscore++; 
+            return "User";
         }
         else if (choice2 === "paper"){
-            computerscore++; return "Computer";
+            computerscore++; 
+            return "Computer";
         }
     }
     else if (choice1 === "paper") {
         if (choice2 === "scissors"){
-             computerscore++; return "Computer";
+             computerscore++; 
+             return "Computer";
         }
         else if (choice2 === "rock"){
-            userscore++; return "User";
+            userscore++;
+             return "User";
         }
     }
     else if (choice1 === "scissors") {
         if (choice2 === "paper"){
-            userscore++; return "User";
+            userscore++; 
+            return "User";
              
         }
         else if (choice2 === "rock"){
-            computerscore++; return "Computer";
+            computerscore++; 
+            return "Computer";
         }
     }
 
@@ -46,10 +52,10 @@ function startGame(e){
     whowins.classList = "";
 
     if (winner == "User"){
-        whowins.innerHTML = winner + "wins";
+        whowins.innerHTML = winner + " wins";
         whowins.classList.add("win");
-    } else if (winner == "computer") {
-        whowins.innerHTML = winner + "wins";
+    } else if (winner == "Computer") {
+        whowins.innerHTML = winner + " wins";
         whowins.classList.add("lose");
     } else {
         whowins.innerHTML = winner ;
